@@ -1,0 +1,25 @@
+male('Aldo Burrows').
+male('Lincon Burrows').
+male('Michael Scofield').
+male('LJ Burrows').
+female('Christina Rose Scofield').
+female('Lisa Rix').
+female('Sara Tancredi').
+female('Ella Scofield').
+
+parent('Aldo Burrows','Lincon Burrows').
+parent('Christina Rose Scofield','Lincon Burrows').
+
+parent('Aldo Burrows','Michael Scofield').
+parent('Christina Rose Scofield','Michael Scofield').
+
+parent('Lisa Rix','LJ Burrows').
+parent('Lincon Burrows','LJ Burrows').
+
+parent('Michael Scofield','Ella Scofield').
+parent('Sara Tancredi','Ella Scofield').
+
+//------Perguntas-----
+
+parent(X,'Michael Scofield').
+parent('Aldo Burrows',X).

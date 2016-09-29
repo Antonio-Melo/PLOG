@@ -1,0 +1,17 @@
+piloto('Lamb').
+piloto('Besenyei').
+piloto('Chambliss').
+piloto('MacLean').
+piloto('Mangold').
+piloto('Jones').
+piloto('Bonhomme').
+
+equipa('Lamb','Breitling').
+equipa('Besenyei','Red Bull').
+equipa('Chambliss','Red Bull').
+equipa('MacLean','Mediterranean Racing Team').
+equipa('Mangold','Cobra').
+equipa('Jones','Matador').
+equipa('Bonhomme','Matador').
+
+aviao('Lamb','MX2').
