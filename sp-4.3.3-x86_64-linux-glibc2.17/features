@@ -1,0 +1,13 @@
+prebuilt=maybe
+prebuilt_installation_dir=
+has_java_jni=yes
+java_dirs=
+java_version=
+has_tcltk=yes
+tcltk_dirs=
+tcltk_version=8.5
+has_bdb=yes
+bdb_dirs=
+bdb_version=5.3.?
+has_odbc=yes
+product=sicstus4.3_linux
