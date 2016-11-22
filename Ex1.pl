@@ -91,6 +91,20 @@ successfulParticipant(Participant) :-
 nSuccessfulParticipants(T) :-
 	findall(Participant,successfulParticipant(Participant),List),
 	length(List,T).
-	
-	
 
+juriFans(JuriFansList):-
+	findall(Participant-Fans,(performance(Participant,Times),findall(J,nth1(J,Times,120),Fans)),JuriFansList).
+
+%nextPhase(N, Participants)
+nextPhase(N, Participants) :-
+	setof(TT-Id-Perf,eligibleOutcome(Id,Perf,TT),Results),
+	reverse(Results,Ordered),
+	sublist(Ordered,Participants,0,N,_).
+
+predX(Q,[R|Rs],[P|Ps]) :-
+	participant(R,I,P), I=<Q, !,
+	predX(Q,Rs,Ps).
+predX(Q,[R|Rs],Ps) :-
+	participant(R,I,_), I>Q,
+	predX(Q,Rs,Ps).
+predX(_,[],[]).
